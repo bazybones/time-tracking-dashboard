@@ -27,25 +27,25 @@ function TimeFrameCards({ isActive }: TimeFrameCardProps) {
           key={index}
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              duration: 0.5,
-            }}
-            className="h-auto bottom-0 hover:bg-slate-900 hover:cursor-pointer hover:scale-y-150 transition-colors p-6 md:absolute w-full bg-dark-blue rounded-t-2xl rounded-b-lg md:bottom-0 md:h-[80%]"
+            // initial={{ opacity: 0, scale: 0 }}
+            // animate={{ opacity: 1, scale: 1 }}
+            // transition={{
+            //   type: "spring",
+            //   duration: 0.5,
+            // }}
+            className="h-auto bottom-0 hover:bg-slate-900 hover:cursor-pointer  transition-colors p-6 md:absolute w-full bg-dark-blue rounded-t-2xl rounded-b-lg md:bottom-0 md:h-[80%]"
           >
-            <div className="grid grid-cols-4 grid-rows-2 md:grid-cols-2 md:grid-rows-3 gap-4">
+            <div className="grid grid-cols-4 grid-rows-2 md:grid-cols-2 md:grid-rows-3 gap-3">
               <motion.span
-                initial={{ y: -100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  type: "spring",
-                  duration: 0.3,
-                  ease: "easeIn",
-                  stiffness: 70,
-                  damping: 5,
-                }}
+                // initial={{ y: -100, opacity: 0 }}
+                // animate={{ y: 0, opacity: 1 }}
+                // transition={{
+                //   type: "spring",
+                //   duration: 0.3,
+                //   ease: "easeIn",
+                //   stiffness: 70,
+                //   damping: 5,
+                // }}
                 className="whitespace-nowrap flex justify-start items-center col-span-1 row-span-1 "
               >
                 {item.title}
@@ -62,15 +62,15 @@ function TimeFrameCards({ isActive }: TimeFrameCardProps) {
               </span>
 
               <motion.span
-                initial={{ y: -100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  type: "spring",
-                  duration: 0.3,
-                  ease: "easeIn",
-                  stiffness: 70,
-                  damping: 5,
-                }}
+                // initial={{ y: -100, opacity: 0 }}
+                // animate={{ y: 0, opacity: 1 }}
+                // transition={{
+                //   type: "spring",
+                //   duration: 0.3,
+                //   ease: "easeIn",
+                //   stiffness: 70,
+                //   damping: 5,
+                // }}
                 className="col-span-1 whitespace-nowrap row-span-1 text-xl md:col-span-2 flex justify-start items-center md:row-span-2 md:text-6xl font-extralight"
               >
                 {" "}
@@ -82,15 +82,15 @@ function TimeFrameCards({ isActive }: TimeFrameCardProps) {
                 hrs
               </motion.span>
               <motion.span
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  type: "spring",
-                  duration: 0.3,
-                  ease: "easeIn",
-                  stiffness: 10,
-                  damping: 5,
-                }}
+                // initial={{ y: 100, opacity: 0 }}
+                // animate={{ y: 0, opacity: 1 }}
+                // transition={{
+                //   type: "spring",
+                //   duration: 0.3,
+                //   ease: "easeIn",
+                //   stiffness: 10,
+                //   damping: 5,
+                // }}
                 className="text-[0.875rem] col-span-3 flex justify-end items-start whitespace-nowrap md:justify-start row-span-2 text-pale-blue md:col-span-2 md:row-span-2"
               >
                 {isActive === "Weekly"
