@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <div className="pt-[2rem] pb-[2rem] md:p-0 min-h-screen flex items-start md:items-center justify-center">
-      <div className="ml-4 mr-4 md:ml-36 md:mr-36 min-h-[50vh] h-auto w-full grid gap-7 grid-cols-1 grid-rows-1 md:grid-cols-4 md:grid-rows-2 ">
+      <div className="ml-4 mr-4 md:ml-36 md:mr-36 min-h-[70vh] h-auto w-full grid gap-7 grid-cols-1 grid-rows-1 md:grid-cols-4 md:grid-rows-2 ">
         <ProfileCard isActive={isActive} changeTimeFrame={changeTimeFrame} />
         <TimeFrameCards isActive={isActive} />
       </div>
