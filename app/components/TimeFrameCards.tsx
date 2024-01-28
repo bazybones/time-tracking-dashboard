@@ -23,7 +23,7 @@ function TimeFrameCards({ isActive }: TimeFrameCardProps) {
         <div
           className={`${
             classMap[item.title]
-          } relative pt-10 md:relative bg-no-repeat bg-right-top rounded-2xl`}
+          } relative pt-10 md:relative bg-no-repeat bg-[top_right_1rem] rounded-2xl`}
           key={index}
         >
           <motion.div

@@ -2,7 +2,7 @@
 import { timeFrames } from "@/utils/data";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
 interface ProfileCardProps {
   isActive: string;
@@ -88,7 +88,7 @@ function ProfileCard({ isActive, changeTimeFrame }: ProfileCardProps) {
             <motion.span
               key={interval}
               onClick={() => changeTimeFrame(interval)}
-              className={`cursor-pointer transition-all hover:text-white hover:font-bold  ${
+              className={`mr-auto cursor-pointer transition-all hover:text-white hover:font-bold  ${
                 isActive === interval
                   ? "text-white font-bold"
                   : "text-desaturated-blue"
